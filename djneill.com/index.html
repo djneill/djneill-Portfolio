@@ -1,17 +1,26 @@
-<!DOCTYPE HTML5>
+<!DOCTYPE HTML>
 
 <html>
 
 <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H18SX7284F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H18SX7284F');
+</script>
 	<title>DJ Neill</title>
 	<meta name="description" content="Full-stack software engineer web developer portfolio">
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta property="og:url" content="https://djneill.com/" />
 	<meta property="og:title" content="DJ Neill" />
 	<meta property="og:description" content="Full-stack software engineer web developer portfolio" />
 	<meta property="og:site_name" content="DJ Neill" />
-	<meta property="og:image" content="http://www.djneill.com/images/metaPic.png" />
+	<meta property="og:image" content="https://www.djneill.com/images/metaPic.png" />
 	<meta property="fb:app_id" content="000000" /> <!-- Used for Domain Insights -->
 	<meta property="og:type" content="website" /> <!-- website is deafult -->
 	<meta property="og:locale" content="en_US" /> <!-- en_US is deafult -->
@@ -41,6 +50,7 @@
 				<li><a href="#one">What I Do</a></li>
 				<li><a href="#two">Who I Am</a></li>
 				<li><a href="#work">My Work</a></li>
+				<li><a href="https://docs.google.com/document/d/e/2PACX-1vRgYzFDGbsZ4jetPD1YukpDXDMLYJkGo7zPpxYKOuVl_Gm0AehmG-9FNBl7QXyZkQ/pub">Resume</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
@@ -97,7 +107,7 @@
 			<div class="row gtr-150 gallery">
 				<article class="from-left col-4 col-12-medium">
 					<a href="https://beautybybea.netlify.app/" target="_blank" data-poptrox="ignore">
-						<span class="image fit"><img src="images/fulls/bea.jpg" alt="" /></span></a>
+						<span class="image fit"><img src="images/beafull.jpg" alt="" /></span></a>
 					<h3>Beauty By Bea</h3>
 					<p></p>
 					<ul class="actions special">
@@ -105,9 +115,29 @@
 								class="button">View</a></li>
 					</ul>
 				</article>
-				<article class="from-bottom col-4 col-12-medium">
+				<article class="from-top col-4 col-12-medium">
+					<a href="https://paradarestoration.netlify.app/" target="_blank" data-poptrox="ignore">
+						<span class="image fit"><img src="images/pr.jpg" alt="" /></span></a>
+					<h3>Parada Restoration</h3>
+					<p></p>
+					<ul class="actions special">
+						<li><a href="https://paradarestoration.netlify.app/" target="_blank" class="button"
+								data-poptrox="ignore">View</a></li>
+					</ul>
+				</article>
+				<article class="from-right col-4 col-12-medium">
+					<a href="https://islandgrinds.netlify.app/" target="_blank" data-poptrox="ignore">
+						<span class="image fit"><img src="images/808.jpg" alt="" /></span></a>
+					<h3>808 Island Grindz</h3>
+					<p></p>
+					<ul class="actions special">
+						<li><a href="https://islandgrinds.netlify.app/" target="_blank" class="button"
+								data-poptrox="ignore">View</a></li>
+					</ul>
+				</article>
+				<article class="from-top col-4 col-12-medium">
 					<a href="https://tmbjj.netlify.app/" target="_blank" data-poptrox="ignore">
-						<span class="image fit"><img src="images/fulls/gym.jpg" alt="" /></span></a>
+						<span class="image fit"><img src="images/gymfull.jpg" alt="" /></span></a>
 					<h3>John's Gym Temple</h3>
 					<p></p>
 					<ul class="actions special">
@@ -115,16 +145,27 @@
 								class="button">View</a></li>
 					</ul>
 				</article>
-				<article class="from-right col-4 col-12-medium">
-					<a href="https://acoolrepair.netlify.app/" target="_blank" data-poptrox="ignore">
-						<span class="image fit"><img src="images/fulls/ac.jpg" alt="" /></span></a>
-					<h3>ACool Repair</h3>
+				<article class="from-bottom col-4 col-12-medium">
+					<a href="https://currentweatherwebapp.netlify.app/" target="_blank" data-poptrox="ignore">
+						<span class="image fit"><img src="images/weather.jpg" alt="" /></span></a>
+					<h3>Current Weather App Using Open Weather API</h3>
 					<p></p>
 					<ul class="actions special">
-						<li><a href="https://acoolrepair.netlify.app/" target="_blank" class="button"
+						<li><a href="https://currentweatherwebapp.netlify.app/" target="_blank" class="button"
 								data-poptrox="ignore">View</a></li>
 					</ul>
 				</article>
+				<article class="from-right col-4 col-12-medium">
+					<a href="https://templeastronomysociety.netlify.app/" target="_blank" data-poptrox="ignore">
+						<span class="image fit"><img src="images/tas.jpg" alt="" /></span></a>
+					<h3>Temple Astronomy Society Using NASA APOD API</h3>
+					<p></p>
+					<ul class="actions special">
+						<li><a href="https://templeastronomysociety.netlify.app/" target="_blank" class="button"
+								data-poptrox="ignore">View</a></li>
+					</ul>
+				</article>
+				
 			</div>
 
 			<!-- <div class="gallery">
@@ -176,7 +217,8 @@
 				</div>
 			</header>
 			<div class="box">
-				<form method="post" action="https://formspree.io/f/mgeqkzaq">
+				<form name="contact" method="post" data-netlify="true">
+					<!-- action="https://formspree.io/f/mgeqkzaq" -->
 					<div class="fields">
 						<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
 						<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
@@ -197,20 +239,20 @@
 
 		<!-- Icons -->
 		<ul class="icons">
-			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 			<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-			<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-			<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li> -->
+			<li><a href="" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://www.linkedin.com/in/dj-neill/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+			<li><a href="#" class="icon brands fa-github"><span class="label">github</span></a></li>
+			<!-- <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li> -->
 		</ul>
 
 		<!-- Menu -->
 		<ul class="menu">
 			<li>&copy;
-				<script>document.write(new Date().getFullYear())</script>
+				<span id="displayYear">
 			</li>
-			<li>Design: <a href="djneill.com">DJ Neill</a></li>
+			<li>Design: <a href="https://djneill.com/">DJ Neill</a></li>
 		</ul>
 
 	</footer>
