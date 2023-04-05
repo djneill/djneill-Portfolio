@@ -4,7 +4,7 @@
 
 Personal website and portfolio
 
-👉 https://djneill.com/
+Take a look at it here 👉 https://djneill.com/
 
 <h2 align="center">Tech Used</h2> 
 <p align="center"> <a href="https://www.w3schools.com/css/" target="_blank"
