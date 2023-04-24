@@ -32,15 +32,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:ital,wght@0,700;1,400&display=swap"
-		rel="stylesheet">
+		rel="stylesheet"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
 
-<body class="is-preload">
-
+<body class="">
+<!-- add is-preload class to body for loading animation during page load -->
 	<!-- Header -->
 	<header id="header">
 		<h1 class="nameFont">DJ Neill</h1>
@@ -60,10 +63,15 @@
 	<section id="intro" class="main style1 dark fullscreen">
 		<div class="content">
 			<header>
-				<h2>Hey.</h2>
+				<h2>Hey, I'm DJ Neill!</h2>
 			</header>
-			<p><strong>I'm DJ Neill a full-stack software engineer.</strong></p>
-			<p></p>
+			<div class="typingContainer">
+				<span id="sentence"></span>
+				<span id="featureText"></span>
+				<span class="inputCursor"></span>
+			</div>
+			<!-- <p><strong>I'm DJ Neill a full-stack software engineer.</strong></p>
+			<p></p> -->
 			<footer>
 				<a href="#one" class="button style2 down">More</a>
 			</footer>
