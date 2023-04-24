@@ -7,6 +7,61 @@ function getYear() {
 
 getYear();
 
+async function typeSentence(sentence, eleRef, delay = 100) {
+	const letters = sentence.split("")
+	let i = 0
+	while(i < letters.length) {
+		await waitForMS(delay)
+		$(eleRef).append(letters[i])
+		i++
+	}
+	return
+}
+
+async function deleteSentence(eleRef) {
+	const sentence = $(eleRef).html()
+	const letters = sentence.split("")
+	let i = 0
+	while(letters.length > 0) {
+		await waitForMS(100)
+		letters.pop()
+		$(eleRef).html(letters.join(""))
+	}
+}
+
+const carouselText = [
+	{ text: "A Full-Stack Software Engineer.", color: "#FFFFFF" },
+	{ text: "A web developer.", color: "#FFFFFF" },
+	{ text: "A problem solver.", color: "#FFFFFF" },
+	{ text: "An outdoor enthusiast.", color: "#FFFFFF" },
+	{ text: "A hobbyist guitar player.", color: "#FFFFFF" }
+]
+
+$(document ).ready(async function() {
+	carousel(carouselText, "#featureText")
+  });
+
+async function carousel(carouselList, eleRef) {
+	let i = 0
+	while(true) {
+		updateFontColor(eleRef, carouselList[i].color)
+		await typeSentence(carouselList[i].text, eleRef)
+		await waitForMS(1500)
+		await deleteSentence(eleRef)
+		await waitForMS(500)
+		i++
+		if(i >= carouselList.length) { i = 0 }
+	}
+}
+
+function updateFontColor(eleRef, color) {
+	$(eleRef).css('color', color)
+}
+
+function waitForMS(ms) {
+	return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 (function($) {
 
 	var	$window = $(window),
