@@ -1,4 +1,4 @@
-<img align="center" src="images/readPortfolio.png" alt="Picture of portfolio homepage"/>
+<img align="center" src="images/readme.png" alt="Picture of portfolio homepage"/>
 
 <h1 align="center">DJ Neill Portfolio</h1>
 
