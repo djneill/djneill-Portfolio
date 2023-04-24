@@ -4211,3 +4211,41 @@ body.is-touch .main {
 	width: 100%;
 	height: auto;
 }
+
+.typingContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inputCursor {
+	display: inline;
+	width: 2px;
+	height: 40px;
+	background-color: #ffffff;
+	margin-left: 4px;
+	animation: blink .6s linear infinite alternate;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+#featureText {
+	margin-left: 4px;
+	font-family: 'Darker Grotesque', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+	#featureText {
+		font-size: 30px;
+		line-height: 1;
+	}
+}
+@media screen and (max-width: 768px) {
+	#featureText {
+		line-height: 1;
+	}
+}
