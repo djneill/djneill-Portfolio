@@ -4184,6 +4184,10 @@ body.is-touch .main {
 	color: #ffffff;
 }
 
+h2.textBlue {
+	color: #0000FF;
+}
+
 #headshot {
 	display: flex;
 	border-radius: 50%;
@@ -4219,6 +4223,7 @@ body.is-touch .main {
 	justify-content: center;
 	align-items: center;
 }
+
 .inputCursor {
 	display: inline;
 	width: 2px;
@@ -4227,12 +4232,25 @@ body.is-touch .main {
 	margin-left: 4px;
 	animation: blink .6s linear infinite alternate;
 }
+
 @keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-  }
+	0% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
 #featureText {
 	margin-left: 4px;
 	font-family: 'Darker Grotesque', sans-serif;
@@ -4240,12 +4258,14 @@ body.is-touch .main {
 	font-size: 40px;
 	color: #ffffff;
 }
+
 @media screen and (max-width: 480px) {
 	#featureText {
 		font-size: 30px;
 		line-height: 1;
 	}
 }
+
 @media screen and (max-width: 768px) {
 	#featureText {
 		line-height: 1;
@@ -4259,6 +4279,7 @@ body.is-touch .main {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
 .flex-container {
 	color: #ffffff;
 	display: flex;
@@ -4266,6 +4287,7 @@ body.is-touch .main {
 	justify-content: center;
 	margin: 1rem;
 }
+
 .project-grid {
 	display: grid;
 	grid-template: auto / repeat(3, 1fr);
@@ -4275,6 +4297,7 @@ body.is-touch .main {
 	gap: 2rem;
 	margin: 2rem;
 }
+
 .project-grid-two {
 	display: grid;
 	grid-template: auto / repeat(2, 1fr);
@@ -4284,18 +4307,21 @@ body.is-touch .main {
 	gap: 2rem;
 	margin: 2rem;
 }
+
 .flex-start {
 	display: grid;
 	justify-content: flex-start;
 	gap: 2rem;
 	margin: 2rem;
 }
+
 .flex-end {
 	display: grid;
 	justify-content: flex-end;
 	gap: 2rem;
 	margin: 2rem;
 }
+
 .project-gif {
 	border: 2px solid #000000;
 	border-radius: 5px;
@@ -4304,25 +4330,31 @@ body.is-touch .main {
 	height: auto;
 
 }
+
 .project-header {
 	font-family: "IBM Plex Sans Condensed";
-	padding: 10px; 
+	padding: 10px;
 	border-radius: 5px;
 	text-shadow: 1px 1px 1px #838387;
 }
+
 .project-ul {
 	margin: 1rem;
 }
+
 .project-button {
 	background-color: #a2def1;
 	color: #000000;
 }
+
 .project-text {
 	color: #ffffff;
 }
+
 .centered-item {
 	grid-column: 2;
 }
+
 .view-projects {
 	display: inline;
 	background-color: #b6bab6;
@@ -4332,11 +4364,65 @@ body.is-touch .main {
 	margin: 10px;
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 480px) {
 	.project-grid {
-		grid-template: auto / repeat(1, 1fr);
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
 	}
+
 	.project-grid-two {
-		grid-template: auto / repeat(1, 1fr);
+		grid-template: auto / 1fr;
 	}
+	.centered-item {
+		grid-column: 1;
+	}
+
+	.flex-start {
+		display: grid;
+		justify-content: center;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.flex-end {
+		display: grid;
+		justify-content: center;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	.project-grid {
+		grid-template: auto / 1fr;
+	}
+
+	.project-grid-two {
+		grid-template: auto / 1fr;
+	}
+	.centered-item {
+		grid-column: 1;
+	}
+
+	.flex-start {
+		display: grid;
+		justify-content: center;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.flex-end {
+		display: grid;
+		justify-content: center;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+	}
+	
 }
