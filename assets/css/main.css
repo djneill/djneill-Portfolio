@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap");
+
 @import url("fontawesome-all.min.css");
 
 /*
@@ -531,7 +533,7 @@ body:before {
 	font-weight: normal;
 	text-transform: none !important;
 	color: #e5e6e7;
-	content: '\f1ce';
+	/* content: '\f1ce'; */
 	cursor: default;
 	display: block;
 	font-size: 2em;
@@ -4248,4 +4250,84 @@ body.is-touch .main {
 	#featureText {
 		line-height: 1;
 	}
+}
+
+/* Projects */
+
+.project-background {
+	background-image: url('/images/5073414.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+.flex-container {
+	color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1rem;
+}
+.project-grid {
+	display: grid;
+	grid-template: auto / repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	margin: 2rem;
+}
+.project-grid-two {
+	display: grid;
+	grid-template: auto / repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	margin: 2rem;
+}
+.flex-start {
+	display: grid;
+	justify-content: flex-start;
+	gap: 2rem;
+	margin: 2rem;
+}
+.flex-end {
+	display: grid;
+	justify-content: flex-end;
+	gap: 2rem;
+	margin: 2rem;
+}
+.project-gif {
+	border: 2px solid #000000;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px 2px #838387;
+	width: 300px;
+	height: auto;
+
+}
+.project-header {
+	font-family: "IBM Plex Sans Condensed";
+	padding: 10px; 
+	border-radius: 5px;
+	text-shadow: 1px 1px 1px #838387;
+}
+.project-ul {
+	margin: 1rem;
+}
+.project-button {
+	background-color: #a2def1;
+	color: #000000;
+}
+.project-text {
+	color: #ffffff;
+}
+.centered-item {
+	grid-column: 2;
+}
+.view-projects {
+	display: inline;
+	background-color: #b6bab6;
+	color: #000000;
+	border-radius: 50px;
+	padding: 10px;
+	margin: 10px;
 }
