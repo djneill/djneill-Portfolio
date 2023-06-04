@@ -4331,3 +4331,12 @@ body.is-touch .main {
 	padding: 10px;
 	margin: 10px;
 }
+
+@media screen and (max-width: 468px) {
+	.project-grid {
+		grid-template: auto / repeat(1, 1fr);
+	}
+	.project-grid-two {
+		grid-template: auto / repeat(1, 1fr);
+	}
+}
